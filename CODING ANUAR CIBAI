@@ -1,0 +1,176 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Order;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author acer
+ */
+public class TestOrder {
+
+    private String setMenuPrice;
+    public static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        Customer info[] = new Customer[3];
+        FoodOrdering order[] = new FoodOrdering[3];
+        Drink drink[] = new Drink[3];
+        Menu menu = new Menu();
+
+        String[] name = new String[3];
+        String[] phoneNo = new String[3];
+        String[] add = new String[3];
+        String[] ID = new String[3];
+        double price;
+        double[] distance = new double[3];
+        int[] code = new int[3];
+        int[] quantity = new int[3];
+        int[] ch = new int[3];
+        int[] drinkquantity = new int[3];
+        int[] fcode = new int[3];
+
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+
+        System.out.println("\nWelcome to NasiAyam-Meletop Food Ordering System!");
+        System.out.println("\nPlease enter the following informations below : ");
+
+        System.out.println();
+        System.out.println("\nCustomer's Details : ");
+
+        System.out.println("\n^^^^^ORDER SECTION^^^^^");
+        System.out.println("");
+
+        System.out.print("------CUSTOMER 1------");
+        System.out.print("\nName         : ");
+        name[0] = sc.next();
+        System.out.print("Phone Number : ");
+        phoneNo[0] = sc.next();
+        System.out.print("Address      : ");
+        add[0] = sc.next();
+        System.out.print("Order ID     : ");
+        ID[0] = sc.next();
+
+        menu.MenuPrice();
+        System.out.println("Please enter your order code here : ");
+        code[0] = sc.nextInt();
+        System.out.println("Please enter the quantity : ");
+        quantity[0] = sc.nextInt();
+        menu.DrinkType();
+        System.out.println("Please enter the code of the drink type : ");
+        ch[0] = sc.nextInt();
+        menu.DrinkFlavour();
+        System.out.println("Please enter the code of the drink flavour : ");
+        fcode[0] = sc.nextInt();
+        System.out.println("Please enter the quantity of the drink : ");
+        drinkquantity[0] = sc.nextInt();
+
+        info[0] = new Customer(name[0], add[0], phoneNo[0]);
+        order[0] = new FoodOrdering(ID[0], code[0], quantity[0], distance[0]);
+        drink[0] = new Drink(ch[0], fcode[0], drinkquantity[0]);
+        System.out.println("\n^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 1^^^^^");
+        System.out.print("\nPlease enter the range for your location(km) : ");
+        distance[0] = sc.nextDouble();
+        System.out.println("");
+        System.out.println(order[0]);
+        System.out.println("");
+        System.out.printf("Total Food Price        : RM%.2f", order[0].calculateFoodPrice());
+        System.out.println("");
+        System.out.printf("Total Drink Price       : RM%.2f", drink[0].calculateDrinkPrice());
+        System.out.println("");
+        System.out.printf("Total Service Charge    : RM%.2f", order[0].TotalServiceCharge());
+        System.out.println("");
+        System.out.printf("Total Price             : RM%.2f", (order[0].calculateTotalPrice() + drink[0].TotalDrinkPrice()));
+
+        System.out.println("");
+        System.out.print("\n------CUSTOMER 2------");
+        System.out.print("\nName         : ");
+        name[1] = sc.next();
+        System.out.print("Phone Number : ");
+        phoneNo[1] = sc.next();
+        System.out.print("Address      : ");
+        add[1] = sc.next();
+        System.out.print("Order ID     : ");
+        ID[1] = sc.next();
+
+        menu.MenuPrice();
+        System.out.println("Please enter your order code here : ");
+        code[1] = sc.nextInt();
+        System.out.println("Please enter the quantity : ");
+        quantity[1] = sc.nextInt();
+        menu.DrinkType();
+        System.out.println("Please enter the code of the drink type : ");
+        ch[1] = sc.nextInt();
+        menu.DrinkFlavour();
+        System.out.println("Please enter the code of the drink flavour : ");
+        fcode[1] = sc.nextInt();
+        System.out.println("Please enter the quantity of the drink : ");
+        drinkquantity[1] = sc.nextInt();
+        info[1] = new Customer(name[1], add[1], phoneNo[1]);
+        order[1] = new FoodOrdering(ID[1], code[1], quantity[1], distance[1]);
+        drink[1] = new Drink(ch[1], fcode[1], drinkquantity[1]);
+        System.out.println("\n^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 2^^^^^");
+        System.out.print("\nPlease enter the range for your location(km) : ");
+        distance[1] = sc.nextDouble();
+        System.out.println("");
+        System.out.println(order[1]);
+        System.out.println("");
+        System.out.printf("Total Food Price        : RM%.2f", order[1].calculateFoodPrice());
+        System.out.println("");
+        System.out.printf("Total Drink Price       : RM%.2f", drink[1].calculateDrinkPrice());
+        System.out.println("");
+        System.out.printf("Total Service Charge    : RM%.2f", order[1].TotalServiceCharge());
+        System.out.println("");
+        System.out.printf("Total Price             : RM%.2f", (order[1].calculateTotalPrice() + drink[1].TotalDrinkPrice()));
+
+        System.out.println("");
+        System.out.print("\n------CUSTOMER 3------");
+        System.out.print("\nName         : ");
+        name[2] = sc.next();
+        System.out.print("Phone Number : ");
+        phoneNo[2] = sc.next();
+        System.out.print("Address      : ");
+        add[2] = sc.next();
+        System.out.print("Order ID     : ");
+        ID[2] = sc.next();
+
+        menu.MenuPrice();
+        System.out.println("Please enter your order code here : ");
+        code[2] = sc.nextInt();
+        System.out.println("Please enter the quantity : ");
+        quantity[2] = sc.nextInt();
+        menu.DrinkType();
+        menu.DrinkType();
+        System.out.println("Please enter the code of the drink type : ");
+        ch[2] = sc.nextInt();
+        menu.DrinkFlavour();
+        System.out.println("Please enter the code of the drink flavour : ");
+        fcode[2] = sc.nextInt();
+        System.out.println("Please enter the quantity of the drink : ");
+        drinkquantity[2] = sc.nextInt();
+        info[2] = new Customer(name[2], add[2], phoneNo[2]);
+        order[2] = new FoodOrdering(ID[2], code[2], quantity[2], distance[2]);
+        drink[2] = new Drink(ch[2], fcode[2], drinkquantity[2]);
+        System.out.println("\n^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 3^^^^^");
+        System.out.print("\nPlease enter the range for your location(km) : ");
+        distance[2] = sc.nextDouble();
+        System.out.println("");
+        System.out.println(order[2]);
+        System.out.println("");
+        System.out.printf("Total Food Price        : RM%.2f", order[2].calculateFoodPrice());
+        System.out.println("");
+        System.out.printf("Total Drink Price       : RM%.2f", drink[2].calculateDrinkPrice());
+        System.out.println("");
+        System.out.printf("Total Service Charge    : RM%.2f", order[2].TotalServiceCharge());
+        System.out.println("");
+        System.out.printf("Total Price             : RM%.2f", (order[2].calculateTotalPrice() + drink[2].TotalDrinkPrice()));
+
+        System.out.println("");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+    }
+
+}
