@@ -1,0 +1,83 @@
+package Order;
+
+/**
+ *
+ * @author acer
+ */
+public class FoodOrdering {
+
+    private String OrderID,MenuPrice;
+    private double TotalPrice, ServiceCharge, price, FoodPrice, distance;
+    double rate;
+    private int code, quantity;
+
+    public FoodOrdering(String OrderID, int code, int quantity,double distance) {
+        this.OrderID = OrderID;
+        this.code = code;
+        this.quantity = quantity;
+        this.distance = distance;
+    }
+
+    public String getOrderID() {
+        return OrderID;
+    }
+
+    public double getQuantityofOrder() {
+        return quantity;
+    }
+    
+    public double getDistance(){
+        return distance;
+    }
+
+    
+    public double calculateFoodPrice() {
+        if (code == 1) {
+            System.out.println("1. Nasi Ayam Biasa , RM5.00");
+            price = 5;
+        } else if (code == 2) {
+            System.out.println("2. Nasi Ayam Special , RM6.00");
+            price = 6;
+        } else if (code == 3) {
+            System.out.println("3. Nasi Ayam (Extra Ayam) , RM7.00");
+            price = 7;
+        }
+        else if (code == 4) {
+            System.out.println("4. Nasi Ayam Madu Bakar , RM8.00");
+            price = 8;
+        }
+        else if (code == 5) {
+            System.out.println("5. Nasi Ayam Percik Letop , RM9.00");
+            price = 9;
+        }
+        return FoodPrice = (quantity * price);
+    }
+
+    public void calculateServiceCharge(double ServiceCharge) {
+        this.ServiceCharge=ServiceCharge;
+    }
+    
+    public double TotalServiceCharge(){
+        if (distance < 10) {
+            System.out.println("Service Charge is 10%");
+            rate = 0.1;
+            ServiceCharge = rate * FoodPrice;
+        } else if ((distance >= 10) && (distance <= 20)) {
+            System.out.println("Service Charge is 20%");
+            rate = 0.2;
+            ServiceCharge = rate * FoodPrice;
+        } else {
+            System.out.println("Your order is invalid!");
+        }
+        return ServiceCharge;
+    }
+    
+    public double calculateTotalPrice() {
+        return  FoodPrice + ServiceCharge;
+    }
+
+    public String toString() {
+        return "Order ID          : " + OrderID + "\nQuantity of Order : " + quantity ;
+    }
+
+}
