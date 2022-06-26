@@ -1,0 +1,64 @@
+package Order;
+
+/**
+ *
+ * @author acer
+ */
+public class Drink {
+
+    private int drinkquantity, fcode, ch;
+    private double DrinkPrice, price, TotalDrinkPrice, total;
+
+    public Drink(int ch, int fcode, int drinkquantity) {
+        this.drinkquantity = drinkquantity;
+        this.ch = ch;
+        this.fcode = fcode;
+    }
+
+    public double calculateDrinkPrice() {
+        switch (ch) {
+            case 1:
+                if (fcode == 1) {
+                    System.out.println("1. Milo , RM1.20");
+                    price = 1.2;
+                } else if (fcode == 2) {
+                    System.out.println("2. Teh'O , RM0.80");
+                    price = 0.8;
+                } else if (fcode == 3) {
+                    System.out.println("3. Teh Tarik , RM1.00");
+                    price = 1.0;
+                } else if (fcode == 4) {
+                    System.out.println("4. Sirap , RM1.20");
+                    price = 1.20;
+                } else {
+                    System.out.println("5. Singo Beng , RM1.50");
+                    price = 1.5;
+                }
+                break;
+
+            case 2:
+                if (fcode == 1) {
+                    System.out.println("1. Milo , RM1.50");
+                    price = 1.5;
+                } else if (fcode == 2) {
+                    System.out.println("2. Teh'O , RM1.00");
+                    price = 1.0;
+                } else if (fcode == 3) {
+                    System.out.println("3. Teh Tarik , RM1.80");
+                    price = 1.8;
+                } else if (fcode == 4) {
+                    System.out.println("4. Sirap , RM1.50");
+                    price = 1.50;
+                } else {
+                    System.out.println("5. Singo Beng , RM1.70");
+                    price = 1.7;
+                }
+                break;
+        }
+        return total = price * drinkquantity;
+    }
+
+    public double TotalDrinkPrice() {
+        return total;
+    }
+}
