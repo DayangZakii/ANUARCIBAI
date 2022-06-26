@@ -1,0 +1,33 @@
+package Order;
+
+/**
+ *
+ * @author acer
+ */
+public class Customer {
+
+    private String name, address, phoneNo;
+
+    public Customer(String name, String add, String phoneNo) {
+        this.name = name;
+        this.address = add;
+        this.phoneNo = phoneNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    public String toString() {
+        return "Name      : " + name + "\nAddress   : " + address + "\nPhone No. : " + phoneNo;
+    }
+
+}
