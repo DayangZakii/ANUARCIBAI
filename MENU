@@ -1,0 +1,50 @@
+package Order;
+
+/**
+ *
+ * @author acer
+ */
+public class Menu {
+
+    private String MenuPrice, DrinkType, DrinkFlavour;
+
+    public Menu() {
+        this.MenuPrice = MenuPrice;
+        this.DrinkFlavour = DrinkFlavour;
+        this.DrinkType = DrinkType;
+    }
+
+    public String MenuPrice() {
+        System.out.println("\n^^^^^^^^^^^^^^^^^MENU SECTION^^^^^^^^^^^^^^^^");
+        System.out.println(" CODE          MENU                   PRICE  ");
+        System.out.println("  1      Nasi Ayam Biasa              RM5.00 ");
+        System.out.println("  2      Nasi Ayam Special            RM6.00 ");
+        System.out.println("  3      Nasi Ayam (Extra Ayam)       RM7.00 ");
+        System.out.println("  4      Nasi Ayam Madu Bakar         RM8.00 ");
+        System.out.println("  5      Nasi Ayam Percik Letop       RM9.00 ");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        return MenuPrice;
+    }
+
+    public String DrinkType() {
+        System.out.println("\n^^^^^^^^^^^^DRINK TYPE^^^^^^^^^^^^");
+        System.out.println("  CODE          TYPE OF DRINK  ");
+        System.out.println("   1                 HOT       ");
+        System.out.println("   2                COLD      ");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println("");
+        return DrinkType;
+    }
+    
+    public String DrinkFlavour() {
+          System.out.println("^^^^^^^^^^^^^^^^^^^^^DRINK FLAVOUR^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println(" CODE           FLAVOUR       PRICE(COLD)     PRICE(HOT)");
+        System.out.println("  1              MILO           RM1.50          RM1.20   ");
+        System.out.println("  2              TEH'O          RM1.00          RM0.80   ");
+        System.out.println("  3            TEH TARIK        RM1.80          RM1.50   ");
+        System.out.println("  4              SIRAP          RM1.50          RM1.00   ");
+        System.out.println("  5            SINGO BENG       RM1.70          RM1.50   ");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        return DrinkFlavour;
+    }
+}
