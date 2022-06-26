@@ -1,0 +1,185 @@
+run:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Welcome to NasiAyam-Meletop Food Ordering System!
+
+Please enter the following informations below : 
+
+
+Customer's Details : 
+
+^^^^^ORDER SECTION^^^^^
+
+------CUSTOMER 1------
+Name         : d
+Phone Number : 6
+Address      : f
+Order ID     : 6
+
+^^^^^^^^^^^^^^^^^MENU SECTION^^^^^^^^^^^^^^^^
+ CODE          MENU                   PRICE  
+  1      Nasi Ayam Biasa              RM5.00 
+  2      Nasi Ayam Special            RM6.00 
+  3      Nasi Ayam (Extra Ayam)       RM7.00 
+  4      Nasi Ayam Madu Bakar         RM8.00 
+  5      Nasi Ayam Percik Letop       RM9.00 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter your order code here : 
+2
+Please enter the quantity : 
+1
+
+^^^^^^^^^^^^DRINK TYPE^^^^^^^^^^^^
+  CODE          TYPE OF DRINK  
+   1                 HOT       
+   2                COLD      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please enter the code of the drink type : 
+2
+^^^^^^^^^^^^^^^^^^^^^DRINK FLAVOUR^^^^^^^^^^^^^^^^^^^^^^
+ CODE           FLAVOUR       PRICE(COLD)     PRICE(HOT)
+  1              MILO           RM1.50          RM1.20   
+  2              TEH'O          RM1.00          RM0.80   
+  3            TEH TARIK        RM1.80          RM1.50   
+  4              SIRAP          RM1.50          RM1.00   
+  5            SINGO BENG       RM1.70          RM1.50   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter the code of the drink flavour : 
+2
+Please enter the quantity of the drink : 
+3
+
+^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 1^^^^^
+
+Please enter the range for your location(km) : 6
+
+Order ID          : 6
+Quantity of Order : 1
+
+2. Nasi Ayam Special , RM6.00
+Total Food Price        : RM6.00
+2. Teh'O , RM1.00
+Total Drink Price       : RM3.00
+Service Charge is 10%
+Total Service Charge    : RM0.60
+Total Price             : RM9.60
+
+------CUSTOMER 2------
+Name         : 4
+Phone Number : f
+Address      : r
+Order ID     : 4
+
+^^^^^^^^^^^^^^^^^MENU SECTION^^^^^^^^^^^^^^^^
+ CODE          MENU                   PRICE  
+  1      Nasi Ayam Biasa              RM5.00 
+  2      Nasi Ayam Special            RM6.00 
+  3      Nasi Ayam (Extra Ayam)       RM7.00 
+  4      Nasi Ayam Madu Bakar         RM8.00 
+  5      Nasi Ayam Percik Letop       RM9.00 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter your order code here : 
+4
+Please enter the quantity : 
+2
+
+^^^^^^^^^^^^DRINK TYPE^^^^^^^^^^^^
+  CODE          TYPE OF DRINK  
+   1                 HOT       
+   2                COLD      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please enter the code of the drink type : 
+2
+^^^^^^^^^^^^^^^^^^^^^DRINK FLAVOUR^^^^^^^^^^^^^^^^^^^^^^
+ CODE           FLAVOUR       PRICE(COLD)     PRICE(HOT)
+  1              MILO           RM1.50          RM1.20   
+  2              TEH'O          RM1.00          RM0.80   
+  3            TEH TARIK        RM1.80          RM1.50   
+  4              SIRAP          RM1.50          RM1.00   
+  5            SINGO BENG       RM1.70          RM1.50   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter the code of the drink flavour : 
+4
+Please enter the quantity of the drink : 
+4
+
+^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 2^^^^^
+
+Please enter the range for your location(km) : 7
+
+Order ID          : 4
+Quantity of Order : 2
+
+4. Nasi Ayam Madu Bakar , RM8.00
+Total Food Price        : RM16.00
+4. Sirap , RM1.50
+Total Drink Price       : RM6.00
+Service Charge is 10%
+Total Service Charge    : RM1.60
+Total Price             : RM23.60
+
+------CUSTOMER 3------
+Name         : 4
+Phone Number : 3
+Address      : 3
+Order ID     : 2
+
+^^^^^^^^^^^^^^^^^MENU SECTION^^^^^^^^^^^^^^^^
+ CODE          MENU                   PRICE  
+  1      Nasi Ayam Biasa              RM5.00 
+  2      Nasi Ayam Special            RM6.00 
+  3      Nasi Ayam (Extra Ayam)       RM7.00 
+  4      Nasi Ayam Madu Bakar         RM8.00 
+  5      Nasi Ayam Percik Letop       RM9.00 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter your order code here : 
+3
+Please enter the quantity : 
+2
+
+^^^^^^^^^^^^DRINK TYPE^^^^^^^^^^^^
+  CODE          TYPE OF DRINK  
+   1                 HOT       
+   2                COLD      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^DRINK TYPE^^^^^^^^^^^^
+  CODE          TYPE OF DRINK  
+   1                 HOT       
+   2                COLD      
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Please enter the code of the drink type : 
+1
+^^^^^^^^^^^^^^^^^^^^^DRINK FLAVOUR^^^^^^^^^^^^^^^^^^^^^^
+ CODE           FLAVOUR       PRICE(COLD)     PRICE(HOT)
+  1              MILO           RM1.50          RM1.20   
+  2              TEH'O          RM1.00          RM0.80   
+  3            TEH TARIK        RM1.80          RM1.50   
+  4              SIRAP          RM1.50          RM1.00   
+  5            SINGO BENG       RM1.70          RM1.50   
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Please enter the code of the drink flavour : 
+2
+Please enter the quantity of the drink : 
+3
+
+^^^^^SERVICE CHARGE SELECTION FOR CUSTOMER 3^^^^^
+
+Please enter the range for your location(km) : 8
+
+Order ID          : 2
+Quantity of Order : 2
+
+3. Nasi Ayam (Extra Ayam) , RM7.00
+Total Food Price        : RM14.00
+2. Teh'O , RM0.80
+Total Drink Price       : RM2.40
+Service Charge is 10%
+Total Service Charge    : RM1.40
+Total Price             : RM17.80
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BUILD SUCCESSFUL (total time: 48 seconds)
